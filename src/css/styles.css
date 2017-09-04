@@ -296,6 +296,10 @@ nav {
   cursor: pointer;
 }
 
+.left-side__item {
+  display: none;
+}
+
 .left-side__link {
   display: block;
   text-decoration: none;
