@@ -233,6 +233,7 @@ header .items {
 nav {
   background: #7EBFD9;
   padding: 10px 0;
+  position: relative;
 }
 
 .nav__items {
@@ -292,17 +293,17 @@ nav {
   background: #7EBFD9;
   border: 1px solid #5D5D5D;
   padding-left: 20px;
+  cursor: pointer;
 }
 
 .left-side__link {
   display: block;
   text-decoration: none;
   color: #5D5D5D;
-  padding: 10px 0;
   background: #DEDEDE;
   border: 1px solid #5D5D5D;
   transition: all 0.4s;
-  padding-left: 20px;
+  padding: 10px 0 10px 20px;
 }
 
 .left-side__link:hover {
@@ -555,6 +556,17 @@ small {
   color: #ffffff;
 }
 
+@media screen and (max-width: 1115px) {
+  .wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .left-side {
+    flex-basis: 100%;
+  }
+}
+
 @media screen and (max-width: 1040px) {
   .wrapper {
     padding-left: 30px;
@@ -587,6 +599,11 @@ small {
 
   .nav__items {
     display: none;
+    position: absolute;
+    background: #7EBFD9;
+    left: 15px;
+    width: 100%;
+    z-index: 3;
   }
 
   .nav__item {

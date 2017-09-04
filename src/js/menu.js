@@ -10,14 +10,24 @@ $(document).ready(function() {
     });//end resize
 
 });//end ready
-// слайдер
 $('.real__photo').slick({
-
     autoplay: true,
-
     fade: true
 
+});
 
 
+
+$(function () {
+    $('.left-side__category').on('click', function () {
+        $('.left-side__item').slideToggle(300, function () {
+            if($(this).css('display') === 'none'){
+                $(this).remove('style');
+            }
+
+        });
+
+    });
 
 });
+
