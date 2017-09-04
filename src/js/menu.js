@@ -8,4 +8,16 @@ $(document).ready(function() {
             $('.nav__items').removeAttr('style');
         }
     });//end resize
+
 });//end ready
+// слайдер
+$('.real__photo').slick({
+
+    autoplay: true,
+
+    fade: true
+
+
+
+
+});
