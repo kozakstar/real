@@ -112,6 +112,16 @@ img {
   height: auto;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+}
+
 .wrapper {
   max-width: 1245px;
   padding-left: 30px;
@@ -142,6 +152,16 @@ header .items {
   margin-right: -15px;
   justify-content: space-between;
   align-items: center;
+}
+
+.address__contact {
+  text-decoration: none;
+  color: #5D5D5D;
+  transition: color 0.3s;
+}
+
+.address__contact:hover {
+  color: #FFFFFF;
 }
 
 .products-active {
@@ -228,6 +248,11 @@ header .items {
 .icon-buy1 {
   height: 45px;
   width: 45px;
+}
+
+.icon-buy1:hover {
+  fill: #FF444C;
+  transform: scale(1.1);
 }
 
 nav {
@@ -494,14 +519,20 @@ main {
   text-decoration: none;
   background: #DAE805;
   color: black;
-  padding: 8px 0;
+  padding: 10px 0;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.products__btn:hover {
+  color: #E7E7E7;
+  background: #DF222A;
 }
 
 .buy-2 {
   height: 20px;
   width: 20px;
   vertical-align: bottom;
-  padding: 0 8px;
 }
 
 footer {

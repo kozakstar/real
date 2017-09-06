@@ -1,0 +1,22 @@
+{
+  "name": "hw4",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Kozakstar <kozakstar1991@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/kozakstar/real",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "slick-carousel": "^1.7.1"
+  }
+}
