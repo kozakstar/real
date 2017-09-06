@@ -424,6 +424,13 @@ main {
   cursor: pointer;
   border-radius: 10px;
   margin: 20px 0 10px;
+  transition: all 0.3s;
+}
+
+.real__btn:hover {
+  color: #E7E7E7;
+  background: #DF222A;
+  transform: scale(1.1);
 }
 
 .real .slick-prev,
